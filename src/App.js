@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     fetch('https://xcountries-backend.labs.crio.do/all')
       .then((res) => res.json())
-      .then((data) => setCountries(data)).catch((error) => console.error('Error fetching countries:', error));
+      .then((data) => setCountries(data)).catch((error) => console.error('Error fetching data:', error));
   }, []);
 
 
